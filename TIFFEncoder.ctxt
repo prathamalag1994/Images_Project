@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=type
+comment0.target=int\ getTypeInt(TIFFEncoder.TiffType)
+comment0.text=\n\ getTypeInt()\ returns\ the\ integer\ flag\ for\ the\ specified\ TIFF\ type,\ which\n\ is\ used\ to\ specify\ which\ type\ the\ value\ has.\n\n\ @param\ type\ the\ type\ whose\ integer\ flag\ we\ want.\n\ @return\ the\ integer\ representing\ the\ given\ type.\n
+comment1.params=stream\ type\ val
+comment1.target=void\ writeLeftAlignedValue(javax.imageio.stream.FileImageOutputStream,\ TIFFEncoder.TiffType,\ int)
+comment1.text=\n\ writeLeftAlignedValue()\ writes\ a\ given\ value\ of\ the\ given\ type\ into\n\ a\ given\ stream\ as\ a\ left-justified\ four-byte\ record.\n\ See\ Section\ 2\ (page\ 15)\ of\ the\ TIFF\ spec\ for\ details.\n\n\ @param\ stream\ the\ stream\ representing\ the\ file\ being\ written.\n\ @param\ type\ the\ type\ of\ the\ value.\n\ @param\ val\ the\ value\ to\ write.\n\ @throws\ IOException\n
+comment2.params=stream\ tag\ type\ value
+comment2.target=void\ writeValueTag(javax.imageio.stream.FileImageOutputStream,\ int,\ TIFFEncoder.TiffType,\ int)
+comment2.text=\n\ writeValueTag()\ writes\ an\ image\ file\ directory\ (IFD)\ entry\ whose\ value\n\ fits\ into\ the\ Value\ Offset.\n\ See\ Section\ 2\ (page\ 15)\ of\ the\ TIFF\ spec\ for\ more\ details.\n\n\ @param\ stream\ the\ stream\ representing\ the\ file\ being\ written.\n\ @param\ tag\ the\ tag\ that\ identifies\ the\ field.\n\ @param\ type\ the\ type\ of\ the\ value.\n\ @param\ value\ the\ value\ of\ the\ field.\n\ @throws\ IOException\n
+comment3.params=stream\ tag\ type\ count\ offset
+comment3.target=void\ writeOffsetTag(javax.imageio.stream.FileImageOutputStream,\ int,\ TIFFEncoder.TiffType,\ int,\ int)
+comment3.text=\n\ writeOffsetTag()\ writes\ an\ image\ file\ directory\ (IFD)\ entry\ whose\ value\n\ does\ not\ fit\ into\ the\ Value\ Offset,\ so\ we\ store\ it\ at\ another\ offset.\n\ See\ Section\ 2\ (page\ 15)\ of\ the\ TIFF\ spec\ for\ more\ details.\n\n\ @param\ stream\ the\ stream\ representing\ the\ file\ being\ written.\n\ @param\ tag\ the\ tag\ that\ identifies\ the\ field.\n\ @param\ type\ the\ type\ of\ the\ value.\n\ @param\ count\ the\ number\ of\ values\ of\ the\ indicated\ type.\ \n\ @param\ offset\ the\ offset\ in\ the\ file\ where\ the\ actual\ value\ is\ stored.\n\ @throws\ IOException\n
+comment4.params=data\ width\ height\ filename\ isCompressed
+comment4.target=void\ writeTIFF(java.util.ArrayList,\ int,\ int,\ java.lang.String,\ boolean)
+comment4.text=\n\ writeTIFF()\ writes\ the\ specified\ data\ into\ a\ TIFF\ file.\n\ For\ more\ details,\ see\ the\ TIFF\ spec\ at\n\ http\://partners.adobe.com/public/developer/en/tiff/TIFF6.pdf.\n\ This\ code\ adapted\ from\ http\://paulbourke.net/dataformats/tiff/.\n\n\ @param\ data\ the\ bytes\ of\ the\ image\ data.\n\ @param\ width\ the\ width\ of\ the\ image.\n\ @param\ height\ the\ height\ of\ the\ image.\n\ @param\ filename\ the\ name\ of\ the\ file\ to\ write.\n\ @param\ isCompressed\ true\ if\ the\ data\ is\ compressed\ in\ PackBits\ format;\n\ false\ if\ it\ is\ stored\ uncompressed.\n
+comment5.params=image\ filename
+comment5.target=void\ writeTIFF(PixImage,\ java.lang.String)
+comment5.text=\n\ writeTIFF()\ writes\ the\ specified\ PixImage\ into\ an\ uncompressed\ TIFF\ file.\n\n\ @param\ image\ the\ PixImage.\n\ @param\ filename\ the\ name\ of\ the\ file\ to\ write.\n
+comment6.params=rle\ filename
+comment6.target=void\ writeTIFF(RunLengthEncoding,\ java.lang.String)
+comment6.text=\n\ writeTIFF()\ writes\ the\ given\ image\ data\ into\ a\ compressed\ TIFF\ file.\n\n\ @param\ rle\ a\ run-length\ encoding\ of\ the\ image\ data.\n\ @param\ filename\ the\ name\ of\ the\ file\ to\ write.\n
+numComments=7

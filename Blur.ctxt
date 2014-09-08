@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=filename\ numIterations
+comment0.target=void\ blurFile(java.lang.String,\ int)
+comment0.text=\n\ \ blurFile()\ reads\ a\ TIFF\ image\ file,\ blurs\ it,\ write\ the\ blurred\ image\ to\n\ \ a\ new\ TIFF\ image\ file,\ and\ displays\ both\ images.\n\n\ \ @param\ filename\ the\ name\ of\ the\ input\ TIFF\ image\ file.\n\ \ @param\ numIterations\ the\ number\ of\ iterations\ of\ blurring\ to\ perform.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ \ main()\ reads\ the\ command-line\ arguments\ and\ initiates\ the\ blurring.\n\n\ \ The\ first\ command-line\ argument\ is\ the\ name\ of\ the\ image\ file.\n\ \ An\ optional\ second\ argument\ is\ number\ of\ iterations\ of\ blurring.\n\n\ \ @param\ args\ the\ usual\ array\ of\ command-line\ argument\ Strings.\n
+numComments=2

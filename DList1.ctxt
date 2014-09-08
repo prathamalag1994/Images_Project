@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DList1()
+comment0.text=\n\ \ DList1()\ constructor\ for\ an\ empty\ DList1.\n
+comment1.params=red\ green\ blue\ run
+comment1.target=void\ insertFront(short,\ short,\ short,\ int)
+comment2.params=red\ green\ blue\ run
+comment2.target=void\ insertBack(short,\ short,\ short,\ int)
+numComments=3

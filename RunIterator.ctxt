@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=x
+comment0.target=RunIterator(DList1)
+comment0.text=\n\ \ RunIterator()\ constructs\ a\ new\ iterator\ starting\ with\ a\ specified\ run.\n\n\ \ @param\ node\ the\ run\ where\ this\ iterator\ starts.\n
+comment1.params=
+comment1.target=boolean\ hasNext()
+comment1.text=\n\ \ hasNext()\ returns\ true\ if\ this\ iterator\ has\ more\ runs.\ \ If\ it\ returns\n\ \ false,\ then\ the\ next\ call\ to\ next()\ may\ throw\ an\ exception.\n\n\ \ @return\ true\ if\ the\ iterator\ has\ more\ elements.\n
+comment2.params=
+comment2.target=int[]\ next()
+comment2.text=Testing\ one-parameter\ RunLengthEncodin\n\ \ next()\ returns\ an\ array\ of\ 4\ ints\ that\ specifies\ the\ current\ run\ in\ the\n\ \ sequence.\ \ It\ also\ advances\ the\ iterator\ to\ the\ next\ run,\ so\ that\ the\n\ \ next\ call\ to\ next()\ will\ return\ the\ following\ run.\n\n\ \ If\ "this"\ RunIterator\ has\ returned\ every\ run,\ it\ cannot\ be\ expected\ to\n\ \ behave\ well.\ \ (Technically,\ it\ is\ supposed\ to\ throw\ a\n\ \ NoSuchElementException,\ but\ we\ haven't\ learned\ about\ exceptions\ yet.)\n\n\ \ @return\ an\ array\ of\ 4\ ints\ that\ specify\ the\ current\ run\ in\ the\ sequence.\n\ \ The\ pixel\ count\ is\ in\ index\ [0];\ the\ red\ value\ is\ in\ index\ [1];\ the\ green\n\ \ value\ is\ in\ index\ [2];\ and\ the\ blue\ value\ is\ in\ index\ [3].\n\ \ @throws\ NoSuchElementException\ if\ the\ iteration\ has\ no\ more\ elements.\n\ \ (We\ strongly\ recommend\ calling\ hasNext()\ to\ check\ whether\ there\ are\ any\n\ \ more\ runs\ before\ calling\ next().)\n\n\ \ The\ returned\ four-int\ array\ is\ constructed\ in\ next(),\ and\ can\ be\n\ \ discarded\ by\ the\ calling\ method\ after\ use.\ \ The\ array\ should\ not\ be\ part\n\ \ of\ your\ RunLengthEncoding\ data\ structure\!\ \ It\ must\ be\ freshly\ constructed\n\ \ for\ the\ sole\ purpose\ of\ returning\ four\ ints.\n
+comment3.params=
+comment3.target=void\ remove()
+comment3.text=\n\ \ remove()\ would\ remove\ from\ the\ underlying\ run-length\ encoding\ the\ run\n\ \ identified\ by\ this\ iterator,\ but\ we\ are\ NOT\ implementing\ it.\n\n\ \ DO\ NOT\ CHANGE\ THIS\ METHOD.\n
+numComments=4
